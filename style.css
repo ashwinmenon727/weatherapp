@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#1e3c72,#2a5298);
+  color: white;
+  text-align: center;
+}
+
+.title {
+  margin: 10px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.search-box {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: orange;
+  color: white;
+}
+
+#map {
+  height: 60vh;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.weather-card {
+  margin: 15px auto;
+  padding: 15px;
+  width: 300px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  animation: slideUp 0.5s ease;
+}
+
+.weather-card img {
+  width: 80px;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0;}
+  to { transform: translateY(0); opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}

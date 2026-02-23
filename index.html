@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Map Explorer 🌍</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">🌎 Weather Map Explorer</h1>
+
+<div class="search-box">
+  <input type="text" id="cityInput" placeholder="Search place...">
+  <button onclick="searchPlace()">Search</button>
+</div>
+
+<div id="map"></div>
+
+<div id="weatherCard" class="weather-card">
+  <h2 id="cityName">City</h2>
+  <img id="icon">
+  <h1 id="temp">--°C</h1>
+  <p id="desc"></p>
+  <p id="extra"></p>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
